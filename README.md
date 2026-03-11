@@ -14,7 +14,7 @@
 </div>
 
 ## 📌 Project Definition
-**What is Deep Learning?** Deep Learning is a specialized subset of Artificial Intelligence that utilizes multi-layered **Neural Networks** to extract high-level features from raw data. In this project, the model learns to "see" by identifying patterns in handwritten digits.
+**What is Deep Learning?** Deep Learning is a specialized subset of Artificial Intelligence that utilizes multi-layered **Neural Networks** to extract high-level features from raw data. In this project, the model learns to "recognize" by identifying patterns in handwritten digits.
 
 **Purpose:** To develop a robust classification model capable of identifying handwritten digits (0-9) from the **MNIST dataset** with a target accuracy exceeding 97%.
 
@@ -39,7 +39,7 @@ The model utilizes a **Sequential Architecture**, optimized for image processing
 
 ## 🚀 Execution Steps
 1. **Dependencies (dep):** Environment initialized with `TensorFlow`, `NumPy`, and `Matplotlib`.
-2. **Preprocessing:** Data was normalized (0-1 range) to ensure stable gradient descent.
+2. **Preprocessing:** Data was normalized (0-1 range) by dividing pixel values by 255.
 3. **Training:** Executed on **Kaggle's GPU T4** for 10 epochs using the `Adam` optimizer.
 4. **Evaluation:** Tested against 10,000 "unseen" images to verify real-world accuracy.
 
@@ -48,26 +48,25 @@ The model utilizes a **Sequential Architecture**, optimized for image processing
 ## 📈 Performance Visuals (im?)
 
 ### **Training Progress**
-As shown in the Matplotlib graphs below, the model demonstrated rapid convergence. The **Loss** consistently decreased while **Accuracy** stabilized at a remarkable level.
+As shown in the Matplotlib graphs below, the model demonstrated rapid convergence. The **Loss** (error rate) consistently decreased while **Accuracy** stabilized at a remarkable 98%+.
 
 <div align="center">
-  
-  <img src="your-graph-filename.png" width="800px" alt="Training Accuracy and Loss Graphs">
-  
-  <p><i>Fig 1: Learning curves demonstrating high convergence and minimal overfitting.</i></p>
+  <img src="predictions.png" width="800px" alt="Training Accuracy and Loss Graphs">
+  <p><i>Fig 1: Learning curves demonstrating high convergence and stable training history.</i></p>
 </div>
 
 ### **Sample Prediction on Unseen Data**
 The model's ability to generalize was verified by predicting labels for digits it had never encountered during training.
 
 <div align="center">
-  <img src="prediction.png" width="300px" alt="Sample Prediction">
+  <img src="sample.jpg" width="300px" alt="Sample Prediction">
+  <p><i>The model successfully identified the handwritten digit from the test dataset.</i></p>
 </div>
 
 ---
 
 ## 🎯 Final Conclusion
-The project successfully implemented a neural network with **98%+ accuracy**. By leveraging a **Dropout layer**, the model avoided "memorization" and instead learned the true structural characteristics of numerical digits. This demonstrates the power of Deep Learning in automating visual recognition tasks.
+The project successfully implemented a neural network with **98%+ accuracy**. By leveraging a **Dropout layer**, the model avoided "memorization" (overfitting) and instead learned the true structural characteristics of numerical digits. This demonstrates the power of Deep Learning in automating visual recognition tasks.
 
 ---
 <div align="center">
