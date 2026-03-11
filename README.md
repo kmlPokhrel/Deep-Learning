@@ -70,5 +70,5 @@ The project successfully implemented a neural network with **98%+ accuracy**. By
 
 ---
 <div align="center">
-  Designed with ❤️ by [Your Name]
+  Designed with ❤️ by Kamal 
 </div>
